@@ -15,6 +15,7 @@ export default function HomePage(props: HomeProps) {
 }
 
 export async function getStaticProps() {
+	//ssg
 	const featuredEvents = await getFeaturedEvents();
 	return {
 		props: {
